@@ -1,0 +1,28 @@
+#container {
+  height: 200vh;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 60px;
+}
+
+.block {
+  width: 300px;
+  height: 400px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
