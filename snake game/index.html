@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="score">Score: 0</h1>
+            <h1 id="highScore">Highest Score: 0</h1>
+        </header>
+        <div class="board">
+            
+        </div>        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h1 id="modalMessage">I miss you 😢💔</h1>
+                <video id="modalVideo" controls autoplay loop style="display:none;">
+                    <source src="img/vbdieo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio id="modalAudio" controls autoplay style="display:none;">
+                    <source src="img/audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button id="closeModal" class="close-btn">X</button>
+            </div>
+        </div>   
+    </div>
+
+
+    <script src="index.js" defer></script>
+</body>
+</html>

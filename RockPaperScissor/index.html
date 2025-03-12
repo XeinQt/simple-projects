@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- animate css cds -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="container animate__animated animate__fadeInUp animate__delay-0.1s"
+    >
+      <div
+        id="board"
+        class="animate__animated animate__fadeInUp animate__delay-0.5s"
+      >
+        <h2>Your Score: <span id="win">0</span></h2>
+        <h2>Lose Score: <span id="lose">0</span></h2>
+        <h2>Tie: <span id="tie">0</span></h2>
+      </div>
+      <h1 class="announce"></h1>
+
+      <div class="enemyAndYou">
+        <h3>You</h3>
+        <div class="yourMove"></div>
+        <h1>VS</h1>
+        <div class="enemyMove"></div>
+
+        <h3>Enemy</h3>
+      </div>
+
+      <div
+        class="animate__animated animate__fadeInUp animate__delay-1s"
+        class="moves"
+      >
+        <img id="paper" src="imges/paper.png" alt="" />
+        <img id="rock" src="imges/rock.png" alt="" />
+        <img id="scissor" src="imges/scissor.png" alt="" />
+      </div>
+
+      <div class="animate__animated animate__fadeInUp animate__delay-2s btn">
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

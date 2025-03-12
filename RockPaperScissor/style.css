@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --text-color: #1a1a19;
+  --backgroud-color: #fcf596;
+  --semi-backgroud-color: #ff9c73;
+}
+
+body {
+  background-color: var(--backgroud-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 50px 80px;
+  background-color: var(--semi-backgroud-color);
+  color: var(--text-color);
+
+  border-radius: 5px;
+  border-top-left-radius: 100px;
+}
+
+#board {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#board h2 {
+  margin-bottom: 6px;
+}
+
+img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+img:hover {
+  transform: translate(0, -10%);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--backgroud-color);
+  background: var(--text-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button:hover {
+  color: var(--text-color);
+  color: var(--backgroud-color);
+  transform: scale(1.1);
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.enemyAndYou {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.announce {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.enemyAndYou img {
+  width: 50px;
+  height: 50px;
+}
+
+.enemyMove,
+.yourMove {
+  width: 50px;
+  height: 50px;
+}
